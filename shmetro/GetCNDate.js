@@ -1,4 +1,4 @@
-﻿var CalendarData = new Array(100);
+var CalendarData = new Array(100);
 var madd = new Array(12);
 var tgString = "甲乙丙丁戊己庚辛壬癸";
 var dzString = "子丑寅卯辰巳午未申酉戌亥";
@@ -47,22 +47,7 @@ function e2c() {
     for (m = 0; ; m++) {
         k = (CalendarData[m] < 0xfff) ? 11 : 12;
         for (n = k; n >= 0; n--) {
-            if (total <= 29 + GetBit(CalendarData[m], n)) {
-                isEnd = true;
-                break;
-            }
-            total = total - 29 - GetBit(CalendarData[m], n);
-        }
-        if (isEnd) break;
-    }
-    cYear = 1921 + m;
-    cMonth = k - n + 1;
-    cDay = total;
-    if (k == 12) {
-        if (cMonth == Math.floor(CalendarData[m] / 0x10000) + 1) {
-            cMonth = 1 - cMonth;
-        }
-        if (cMonth > Math.floor(CalendarData[m] / 0x10000) + 1) {
+            if (total <= 29="" +="" getbit(calendardata[m],="" n))="" {="" isend="true;" break;="" }="" total="total" -="" n);="" if="" (isend)="" cyear="1921" m;="" cmonth="k" n="" 1;="" cday="total;" (k="=" 12)="" (cmonth="=" math.floor(calendardata[m]="" 0x10000)="" 1)="" cmonth;=""> Math.floor(CalendarData[m] / 0x10000) + 1) {
             cMonth--;
         }
     }
@@ -108,3 +93,4 @@ function GetCNDate() {
     return GetLunarDay(yy, mm, dd);
 } 
 
+</=>
