@@ -136,7 +136,17 @@ var option_tmp = {
         padding: 5,
         textStyle: {
             color: '#000'
-        }
+        },
+        position: function (pos, params, dom, rect, size) {
+            if(size.viewSize[0]<1000){
+                var obj = {top: 70};
+                obj[['left', 'right'][+(pos[0] < size.viewSize[0] / 2)]] = (size.viewSize[0] / 2-125);
+                return obj;
+            }else{
+
+            }
+        },
+        extraCssText: 'width: 250px'
     },
     dataZoom: [{
         type: 'slider',
