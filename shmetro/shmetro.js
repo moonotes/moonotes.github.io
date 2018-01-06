@@ -102,7 +102,13 @@ var option_tmp = {
 
     title: {
         left: 'center',
-        text: '2015-2017上海地铁网络客流统计（数据来源：【上海地铁shmetro】官方微博）'
+        text: '2015.5-2017.12上海地铁网络客流统计',
+        subtext: '（数据来源：【上海地铁shmetro】官方微博）',
+        textStyle: {
+            fontSize: 20,
+            fontWeight: 'bolder',
+            color: 'red'          // 主标题文字颜色
+        },
     },
     tooltip: {
         trigger: 'axis',
