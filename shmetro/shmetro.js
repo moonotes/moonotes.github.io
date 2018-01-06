@@ -108,12 +108,6 @@ var option_tmp = {
             fontSize: 20,
             fontWeight: 'bolder',
             color: 'red'          // 主标题文字颜色
-        },
-    },
-    tooltip: {
-        trigger: 'axis',
-        position: function (pt) {
-            return [pt[0], '10%'];
         }
     },
     legend: {
@@ -130,6 +124,19 @@ var option_tmp = {
     },
     yAxis: {
         name: '日总客流量(万人次)'
+    },
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross'
+        },
+        backgroundColor: 'rgba(245, 245, 245, 0.8)',
+        borderWidth: 1,
+        borderColor: '#ccc',
+        padding: 5,
+        textStyle: {
+            color: '#000'
+        }
     },
     dataZoom: [{
         type: 'slider',
