@@ -147,7 +147,7 @@ var option_tmp = {
 
             }
         },
-        extraCssText: 'width: 230px'
+        extraCssText: 'width: 250px'
     },
     dataZoom: [{
         type: 'slider',
