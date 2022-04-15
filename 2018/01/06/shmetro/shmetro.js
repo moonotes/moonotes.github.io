@@ -110,7 +110,7 @@ var option_tmp = {
 
     title: {
         left: 'center',
-        text: '2015.5-2018.7上海地铁网络客流统计',
+        text: '2015.5-2022.4上海地铁网络客流统计',
         subtext: '（数据来源：【上海地铁shmetro】官方微博）',
         textStyle: {
             fontSize: 20,
