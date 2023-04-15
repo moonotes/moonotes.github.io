@@ -20,18 +20,7 @@
 	<meta name="format-detection" content="telephone=yes"/>
 	<meta name="msapplication-tap-highlight" content="no" />
 </head>
-<script src="http://cdn.bootcss.com/purl/2.3.1/purl.min.js"></script>
-<script>
-var url = purl();
-if (url.attr('host') == 'www.moonotes.com') {
-    var old_url = url.attr('source');
-    var new_url = old_url.replace('www.moonotes.com', "tu.zxfox.com");
-    window.location.replace(new_url); 
-}else {
-    window.location.href="https://zxfox.com";
-}
-    
-</script>
+
 <style>
 html, body,.container {height: 100%; }
 @media screen and (min-width:1000px){
@@ -65,6 +54,20 @@ html, body,.container {height: 100%; }
 <div id="main" class="box"></div>
 </body>
 </html>
+<script src="http://cdn.bootcss.com/purl/2.3.1/purl.min.js"></script>
+<script>
+var url = purl();
+if (url.attr('host') == 'www.moonotes.com') {
+    var old_url = url.attr('source');
+    var new_url = old_url.replace('www.moonotes.com', "tu.zxfox.com");
+    window.location.replace(new_url); 
+}else {
+    window.location.href="https://zxfox.com";
+}
+    
+</script>
+
+
 <script src="https://cdn.bootcss.com/echarts/4.0.2/echarts.min.js"></script>
 <script src="GetCNDate.js"></script>
 <script src="shmetro.js?ts=202204160149"></script>
